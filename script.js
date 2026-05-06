@@ -121,30 +121,23 @@ if (track) {
     );
   };
 
-  // Obsługa Dotyku
-  track.addEventListener(
-    "touchstart",
-    (e) => {
-      isDragging = true;
-      startPos = e.touches[0].clientX;
-      track.style.transition = "none"; // Wyłączamy animację podczas przeciągania
-      animationID = requestAnimationFrame(animation);
-    },
-    { passive: true },
-  );
+  // Obsługa Dotyku i Myszki
+  const dragStart = (e) => {
+    isDragging = true;
+    startPos = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+    track.style.transition = "none"; // Wyłączamy animację podczas przeciągania
+    animationID = requestAnimationFrame(animation);
+  };
 
-  track.addEventListener(
-    "touchmove",
-    (e) => {
-      if (!isDragging) return;
-      const currentPosition = e.touches[0].clientX;
-      const diff = currentPosition - startPos;
-      currentTranslate = prevTranslate + diff;
-    },
-    { passive: true },
-  );
+  const dragMove = (e) => {
+    if (!isDragging) return;
+    const currentPosition = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+    const diff = currentPosition - startPos;
+    currentTranslate = prevTranslate + diff;
+  };
 
-  track.addEventListener("touchend", () => {
+  const dragEnd = () => {
+    if (!isDragging) return;
     isDragging = false;
     cancelAnimationFrame(animationID);
 
@@ -154,7 +147,16 @@ if (track) {
     if (movedBy < -50) goToSlide(currentIndex + 1);
     else if (movedBy > 50) goToSlide(currentIndex - 1);
     else goToSlide(currentIndex); // wróć do obecnego
-  });
+  };
+
+  track.addEventListener("touchstart", dragStart, { passive: true });
+  track.addEventListener("touchmove", dragMove, { passive: true });
+  track.addEventListener("touchend", dragEnd);
+
+  track.addEventListener("mousedown", dragStart);
+  track.addEventListener("mousemove", dragMove);
+  track.addEventListener("mouseup", dragEnd);
+  track.addEventListener("mouseleave", dragEnd);
 
   window.addEventListener("resize", () => {
     createDots();
@@ -163,4 +165,9 @@ if (track) {
 
   createDots();
   goToSlide(0);
+
+  const prevBtn = document.querySelector("#prevService");
+  const nextBtn = document.querySelector("#nextService");
+  if (prevBtn) prevBtn.addEventListener("click", () => goToSlide(currentIndex - 1));
+  if (nextBtn) nextBtn.addEventListener("click", () => goToSlide(currentIndex + 1));
 }

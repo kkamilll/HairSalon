@@ -1,342 +1,352 @@
 <!doctype html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atelier Julia | Salon Fryzjerski Szamotuły</title>
-    <meta
-      name="description"
-      content="Atelier Julia w Szamotułach - nowoczesny kobiecy salon fryzjerski. Rezerwacja przez Booksy, kontakt i lokalizacja w jednym miejscu."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="topbar" id="start">
-      <div class="container topbar-inner">
-        <a href="#start" class="logo" aria-label="Atelier Julia">
-          <span class="logo-sign">AJ</span>
-          <span class="logo-copy">
-            <strong>Atelier Julia</strong>
-            <small>Salon Fryzjerski Szamotuły</small>
-          </span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier Julia | Salon Fryzjerski dla Kobiet Szamotuły</title>
+  <meta name="description"
+    content="Atelier Julia to profesjonalny salon fryzjerski dla kobiet w Szamotułach. Oferujemy strzyżenie damskie, koloryzację premium i pielęgnację. Zarezerwuj przez Booksy!" />
+  <meta name="keywords"
+    content="salon fryzjerski dla kobiet szamotuły, fryzjer damski szamotuły, koloryzacja szamotuły, dobry fryzjer szamotuły, atelier julia" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="topbar" id="start">
+    <div class="container topbar-inner">
+      <a href="#start" class="logo" aria-label="Atelier Julia">
+        <svg class="logo-sign-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="6" cy="6" r="3"></circle>
+          <circle cx="6" cy="18" r="3"></circle>
+          <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+          <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+          <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+        </svg>
+        <span class="logo-copy">
+          <strong>Atelier Julia</strong>
+          <small>Salon Fryzjerski Szamotuły</small>
+        </span>
+      </a>
+      <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#o-mnie">O mnie</a>
+        <a href="#uslugi">Usługi</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#mapa">Mapa</a>
+      </nav>
+      <div class="top-actions">
+        <a class="top-icon-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14-2.934 0-4.832 1.7-4.832 5.094v2.406H7v4h2.811V22h4.189v-8.5Z" />
+          </svg>
         </a>
-        <button
-          class="menu-btn"
-          id="menuToggle"
-          aria-expanded="false"
-          aria-controls="mainNav"
-        >
-          <span></span><span></span><span></span>
-          <span class="sr-only">Menu</span>
-        </button>
-        <nav class="main-nav" id="mainNav">
-          <a href="#uslugi">Usługi</a>
-          <a href="#galeria">Galeria</a>
-          <a href="#kontakt">Kontakt</a>
-          <a href="#mapa">Mapa</a>
-        </nav>
-        <a
-          class="top-booksy"
-          href="https://booksy.com/pl-pl/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="top-icon-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7h-9Zm9.35 1.35a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z" />
+          </svg>
+        </a>
+        <a class="top-booksy" href="https://booksy.com/pl-pl/" target="_blank" rel="noopener noreferrer">
           <span>Booksy</span>
         </a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="container hero-inner">
-          <!-- Główne przesłanie -->
-          <article class="hero-panel reveal">
-            <h1>Salon Julii</h1>
-            <p class="hero-subtitle">
-              Twoje miejsce na profesjonalną koloryzację i strzyżenie w
-              Szamotułach.
-            </p>
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-inner">
+        <!-- Główne przesłanie -->
+        <article class="hero-panel reveal">
+          <h1>Salon Fryzjerski<br>dla Kobiet Szamotuły</h1>
+          <p class="hero-subtitle">
+            Atelier Julia — Twoje miejsce na profesjonalną koloryzację i strzyżenie damskie. Odkryj najwyższą jakość
+            usług w centrum Szamotuł.
+          </p>
 
-            <div class="hero-actions">
-              <a
-                class="btn btn-dark"
-                href="https://booksy.com/pl-pl/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Zarezerwuj termin
-              </a>
-              <a class="btn btn-light" href="#kontakt">Kontakt</a>
-            </div>
-          </article>
-
-          <!-- Wyeksponowane Godziny Otwarcia -->
-          <aside class="hero-card reveal">
-            <h2 class="hero-card-title">Godziny otwarcia</h2>
-            <div class="hours-grid">
-              <div class="hours-row">
-                <span>Poniedziałek - Piątek</span>
-                <strong>09:00 - 19:00</strong>
-              </div>
-              <div class="hours-row">
-                <span>Sobota</span>
-                <strong>09:00 - 14:00</strong>
-              </div>
-              <div class="hours-row status-closed">
-                <span>Niedziela</span>
-                <strong>Zamknięte</strong>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section services" id="uslugi">
-        <div class="container">
-          <div class="services-head reveal">
-            <h2 class="section-title">Usługi</h2>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="https://booksy.com/pl-pl/" target="_blank" rel="noopener noreferrer">
+              Zarezerwuj termin
+            </a>
+            <a class="btn btn-light" href="#kontakt">Kontakt</a>
           </div>
-          <div class="services-viewport">
-            <div class="services-layout" id="servicesTrack">
-              <article class="service reveal">
-                <img
-                  src="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&w=1000&q=80"
-                  alt="Strzyżenie damskie"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Strzyżenie i modelowanie</h3>
-                  <p>
-                    Precyzyjne cięcie dopasowane do proporcji twarzy i
-                    codziennej stylizacji.
-                  </p>
-                </div>
-              </article>
-              <article class="service reveal">
-                <img
-                  src="https://images.unsplash.com/photo-1595475884562-073c30d45670?auto=format&fit=crop&w=1000&q=80"
-                  alt="Koloryzacja włosów"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Koloryzacja premium</h3>
-                  <p>
-                    Refleksy, rozświetlenia i pełna zmiana koloru z ochroną
-                    kondycji włosa.
-                  </p>
-                </div>
-              </article>
-              <article class="service reveal">
-                <img
-                  src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1000&q=80"
-                  alt="Stylizacja na okazję"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Stylizacje okazjonalne</h3>
-                  <p>
-                    Naturalne fale, gładkie upięcia i fryzury na eventy lub
-                    ważne uroczystości.
-                  </p>
-                </div>
-              </article>
-              <article class="service reveal">
-                <img
-                  src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=80"
-                  alt="Pielęgnacja włosów"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Pielęgnacja i regeneracja</h3>
-                  <p>
-                    Zabiegi odbudowujące i nawilżające przywracające miękkość
-                    oraz blask włosów.
-                  </p>
-                </div>
-              </article>
-              <article class="service reveal">
-                <img
-                  src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1000&q=80"
-                  alt="Fryzury na wydarzenia"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Fryzury okolicznościowe</h3>
-                  <p>
-                    Upięcia i stylizacje dopracowane tak, by utrzymały formę
-                    przez cały dzień.
-                  </p>
-                </div>
-              </article>
-              <article class="service reveal">
-                <img
-                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80"
-                  alt="Dekoloryzacja i korekta koloru"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Korekta koloru</h3>
-                  <p>
-                    Bezpieczne wyrównanie odcienia i plan wyjścia do docelowego
-                    efektu.
-                  </p>
-                </div>
-              </article>
-              <article class="service reveal">
-                <img
-                  src="https://images.unsplash.com/photo-1522337094846-8a818192de1f?auto=format&fit=crop&w=1000&q=80"
-                  alt="Profesjonalna stylizacja ślubna"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Stylizacja ślubna</h3>
-                  <p>
-                    Próba fryzury i finalna stylizacja na dzień ślubu lub sesję
-                    zdjęciową, wykonana z najwyższą dbałością o trwałość.
-                  </p>
-                </div>
-              </article>
-              <article class="service reveal">
-                <!-- Zmieniony link na stabilniejszy dla usługi podcięcia -->
-                <img
-                  src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=80"
-                  alt="Podcięcie końcówek"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Podcięcie końcówek</h3>
-                  <p>
-                    Szybka usługa odświeżająca kształt fryzury i zdrowy wygląd
-                    włosów.
-                  </p>
-                </div>
-              </article>
+        </article>
+
+        <!-- Wyeksponowane Godziny Otwarcia -->
+        <aside class="hero-card reveal">
+          <h2 class="hero-card-title">Godziny otwarcia</h2>
+          <div class="hours-grid">
+            <div class="hours-row">
+              <span>Poniedziałek - Piątek</span>
+              <strong>09:00 - 19:00</strong>
+            </div>
+            <div class="hours-row">
+              <span>Sobota</span>
+              <strong>09:00 - 14:00</strong>
+            </div>
+            <div class="hours-row status-closed">
+              <span>Niedziela</span>
+              <strong>Zamknięte</strong>
             </div>
           </div>
-        </div>
-        <div class="services-pagination" id="servicesDots"></div>
-  </div>
-      </section>
+        </aside>
+      </div>
+    </section>
 
-      <section class="section" id="galeria">
-        <div class="container">
-          <h2 class="section-title reveal">Atmosfera salonu</h2>
-          <div class="mosaic">
-            <figure class="mosaic-item tall reveal">
-              <img
-                src="https://images.pexels.com/photos/7755449/pexels-photo-7755449.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Wnętrze salonu fryzjerskiego"
-                loading="lazy"
-              />
-            </figure>
-            <figure class="mosaic-item reveal">
-              <img
-                src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Praca fryzjerki przy koloryzacji"
-                loading="lazy"
-              />
-            </figure>
-            <figure class="mosaic-item reveal">
-              <img
-                src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Profesjonalna pielęgnacja włosów"
-                loading="lazy"
-              />
-            </figure>
-          </div>
+    <section class="section about" id="o-mnie">
+      <div class="container about-inner">
+        <div class="about-image reveal">
+          <img src="https://images.pexels.com/photos/33448218/pexels-photo-33448218.jpeg"
+            alt="Julia - profesjonalny salon fryzjerski dla kobiet Szamotuły" loading="lazy">
         </div>
-      </section>
-
-      <section class="section contact" id="kontakt">
-        <div class="container contact-wrap">
-          <article class="contact-card reveal">
-            <p class="contact-label">Najważniejsze</p>
-            <h2>Kontakt i rezerwacja</h2>
-            <p>Salon Julii, ul. Rynek 1, 64-500 Szamotuły</p>
-            <a href="tel:+48123456789">Telefon: +48 123 456 789</a>
-            <a href="mailto:kontakt@atelierjulia.pl"
-              >E-mail: kontakt@atelierjulia.pl</a
-            >
-            <div class="action-row">
-              <a
-                class="btn btn-dark btn-icon"
-                href="https://booksy.com/pl-pl/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Rezerwacja Booksy
-              </a>
-              <a
-                class="insta-link btn-icon"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7h-9Zm9.35 1.35a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"
-                  />
-                </svg>
-                Instagram
-              </a>
-            </div>
-          </article>
-          <article class="contact-card reveal contact-secondary">
-            <h3>Szybkie informacje</h3>
-            <p>Rezerwacje online są dostępne 24/7 przez Booksy.</p>
-            <p>
-              Najczęściej odpowiadamy telefonicznie w godzinach pracy salonu.
-            </p>
-            <p>Dojazd i parking dostępny w centrum Szamotuł.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section map" id="mapa">
-        <div class="container reveal">
-          <h2 class="section-title">Jak dojechać</h2>
-          <div class="map-box">
-            <iframe
-              title="Mapa salonu fryzjerskiego w Szamotułach"
-              src="https://www.google.com/maps?q=Szamotu%C5%82y&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div>
-          <strong>Atelier Julia</strong>
-          <p>Salon fryzjerski dla kobiet w Szamotułach</p>
-        </div>
-        <div class="footer-actions">
-          <a
-            href="https://booksy.com/pl-pl/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Booksy</a
-          >
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Instagram</a
-          >
+        <div class="about-content reveal">
+          <p class="section-label">O mnie</p>
+          <h2 class="section-title">Poznajmy się</h2>
+          <p class="about-lead">Cześć! Mam na imię Julia i jestem pasjonatką nowoczesnego fryzjerstwa. Od ponad 10 lat
+            dbam o włosy moich klientek, wydobywając ich naturalne piękno.</p>
+          <p>W moim salonie stawiam na indywidualne podejście, najnowocześniejsze techniki koloryzacji oraz kosmetyki
+            najwyższej jakości. Moim celem jest to, aby każda kobieta wychodziła z Atelier Julia z uśmiechem i pięknymi,
+            zdrowymi włosami.</p>
+          <p>Zapraszam Cię do miejsca, gdzie profesjonalizm spotyka się z relaksem.</p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="./script.js"></script>
-  </body>
+    <section class="section services" id="uslugi">
+      <div class="container">
+        <div class="services-head reveal">
+          <h2 class="section-title">Usługi</h2>
+          <div class="services-arrows">
+            <button class="arrow-btn" id="prevService" aria-label="Poprzednia usługa">
+              <svg viewBox="0 0 24 24">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
+            </button>
+            <button class="arrow-btn" id="nextService" aria-label="Następna usługa">
+              <svg viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="services-viewport">
+          <div class="services-layout" id="servicesTrack">
+            <article class="service reveal">
+              <img src="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&w=1000&q=80"
+                alt="Strzyżenie damskie" loading="lazy" />
+              <div>
+                <h3>Strzyżenie i modelowanie</h3>
+                <p>
+                  Precyzyjne cięcie dopasowane do proporcji twarzy i
+                  codziennej stylizacji.
+                </p>
+              </div>
+            </article>
+            <article class="service reveal">
+              <img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?auto=format&fit=crop&w=1000&q=80"
+                alt="Koloryzacja włosów" loading="lazy" />
+              <div>
+                <h3>Koloryzacja premium</h3>
+                <p>
+                  Refleksy, rozświetlenia i pełna zmiana koloru z ochroną
+                  kondycji włosa.
+                </p>
+              </div>
+            </article>
+            <article class="service reveal">
+              <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1000&q=80"
+                alt="Stylizacja na okazję" loading="lazy" />
+              <div>
+                <h3>Stylizacje okazjonalne</h3>
+                <p>
+                  Naturalne fale, gładkie upięcia i fryzury na eventy lub
+                  ważne uroczystości.
+                </p>
+              </div>
+            </article>
+            <article class="service reveal">
+              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=80"
+                alt="Pielęgnacja włosów" loading="lazy" />
+              <div>
+                <h3>Pielęgnacja i regeneracja</h3>
+                <p>
+                  Zabiegi odbudowujące i nawilżające przywracające miękkość
+                  oraz blask włosów.
+                </p>
+              </div>
+            </article>
+            <article class="service reveal">
+              <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1000&q=80"
+                alt="Fryzury na wydarzenia" loading="lazy" />
+              <div>
+                <h3>Fryzury okolicznościowe</h3>
+                <p>
+                  Upięcia i stylizacje dopracowane tak, by utrzymały formę
+                  przez cały dzień.
+                </p>
+              </div>
+            </article>
+            <article class="service reveal">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80"
+                alt="Dekoloryzacja i korekta koloru" loading="lazy" />
+              <div>
+                <h3>Korekta koloru</h3>
+                <p>
+                  Bezpieczne wyrównanie odcienia i plan wyjścia do docelowego
+                  efektu.
+                </p>
+              </div>
+            </article>
+            <article class="service reveal">
+              <img src="https://images.unsplash.com/photo-1522337094846-8a818192de1f?auto=format&fit=crop&w=1000&q=80"
+                alt="Profesjonalna stylizacja ślubna" loading="lazy" />
+              <div>
+                <h3>Stylizacja ślubna</h3>
+                <p>
+                  Próba fryzury i finalna stylizacja na dzień ślubu lub sesję
+                  zdjęciową, wykonana z najwyższą dbałością o trwałość.
+                </p>
+              </div>
+            </article>
+            <article class="service reveal">
+              <!-- Zmieniony link na stabilniejszy dla usługi podcięcia -->
+              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=80"
+                alt="Podcięcie końcówek" loading="lazy" />
+              <div>
+                <h3>Podcięcie końcówek</h3>
+                <p>
+                  Szybka usługa odświeżająca kształt fryzury i zdrowy wygląd
+                  włosów.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="services-pagination" id="servicesDots"></div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="container">
+        <h2 class="section-title reveal">Atmosfera salonu</h2>
+        <div class="mosaic">
+          <figure class="mosaic-item tall reveal">
+            <img
+              src="https://images.pexels.com/photos/7755449/pexels-photo-7755449.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Wnętrze salonu fryzjerskiego" loading="lazy" />
+          </figure>
+          <figure class="mosaic-item reveal">
+            <img
+              src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Praca fryzjerki przy koloryzacji" loading="lazy" />
+          </figure>
+          <figure class="mosaic-item reveal">
+            <img
+              src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Profesjonalna pielęgnacja włosów" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontakt">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-info">
+            <p class="section-label">Kontakt</p>
+            <h2 class="section-title">Umów wizytę</h2>
+            <p class="contact-desc">Zadzwoń do nas lub zarezerwuj termin online w dowolnej chwili. Odpowiadamy na
+              wszystkie zapytania tak szybko, jak to możliwe.</p>
+
+            <ul class="contact-list">
+              <li>
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Adres</strong>
+                  <span>ul. Rynek 1, 64-500 Szamotuły</span>
+                </div>
+              </li>
+              <li>
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Telefon</strong>
+                  <a href="tel:+48123456789">+48 123 456 789</a>
+                </div>
+              </li>
+              <li>
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>E-mail</strong>
+                  <a href="mailto:kontakt@atelierjulia.pl">kontakt@atelierjulia.pl</a>
+                </div>
+              </li>
+            </ul>
+
+            <a class="btn btn-dark contact-btn" href="https://booksy.com/pl-pl/" target="_blank"
+              rel="noopener noreferrer">
+              Zarezerwuj przez Booksy
+            </a>
+          </div>
+          <div class="contact-image">
+            <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=80"
+              alt="Minimalistyczny detal salonu" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map" id="mapa">
+      <div class="container reveal">
+        <h2 class="section-title">Jak dojechać</h2>
+        <div class="map-box">
+          <iframe title="Mapa salonu fryzjerskiego w Szamotułach"
+            src="https://www.google.com/maps?q=Szamotu%C5%82y&output=embed" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Atelier Julia</strong>
+        <p>Salon fryzjerski dla kobiet w Szamotułach</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
