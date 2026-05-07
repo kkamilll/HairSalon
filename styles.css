@@ -72,6 +72,7 @@ a {
   display: flex;
   flex-direction: column;
   line-height: 1.05;
+  white-space: nowrap;
 }
 
 .logo-copy strong {
@@ -100,6 +101,34 @@ a {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-right: 0.2rem;
+  padding-right: 0.8rem;
+  border-right: 1px solid rgba(215, 201, 190, 0.5);
+}
+
+.lang-switch a {
+  font-size: 1.4rem;
+  opacity: 0.4;
+  transition: opacity 0.2s, transform 0.2s, filter 0.2s;
+  text-decoration: none;
+  filter: grayscale(100%);
+}
+
+.lang-switch a:hover {
+  opacity: 0.8;
+  transform: scale(1.15);
+  filter: grayscale(0%);
+}
+
+.lang-switch a.active {
+  opacity: 1;
+  filter: grayscale(0%);
 }
 
 .top-icon-link {
@@ -147,6 +176,7 @@ a {
 .main-nav a {
   position: relative;
   color: #2a2723;
+  white-space: nowrap;
 }
 
 .main-nav a::after {
@@ -796,11 +826,59 @@ h1 {
   }
 
   .service {
-    flex: 0 0 100%;
+    flex: 0 0 85%;
+  }
+  
+  .top-icon-link {
+    display: none;
+  }
+  
+  .logo-copy small {
+    display: none;
+  }
+  
+  .top-actions {
+    gap: 0.4rem;
   }
 
   .footer-inner {
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
+    gap: 1.2rem;
   }
+
+  .footer-inner > div {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-sign-svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .logo-copy strong {
+    font-size: 1.15rem;
+  }
+  
+  .top-booksy {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.85rem;
+    min-height: 38px;
+  }
+  
+  .lang-switch {
+    padding-right: 0.4rem;
+    gap: 0.2rem;
+  }
+  
+  .lang-switch a {
+    font-size: 1.2rem;
+  }
+  
+  .topbar-inner {
+    gap: 0.4rem;
+  }
+
 }
