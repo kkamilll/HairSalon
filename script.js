@@ -166,9 +166,9 @@ const translations = {
     nav_gallery: "Galeria",
     nav_contact: "Kontakt",
     nav_map: "Mapa",
-    hero_h1: "Salon Fryzjerski<br>dla Kobiet Szamotuły",
+    hero_h1: "Salon Fryzjerski<br>dla Kobiet",
     hero_sub:
-      "Atelier Julia — Twoje miejsce na profesjonalną koloryzację i strzyżenie damskie. Odkryj najwyższą jakość usług w centrum Szamotuł.",
+      "Atelier Julia — Twoje miejsce na profesjonalną koloryzację i strzyżenie damskie. Odkryj najwyższą jakość usług w centrum miasta.",
     hero_btn1: "Zarezerwuj termin",
     hero_btn2: "Kontakt",
     hours_title: "Godziny otwarcia",
@@ -211,7 +211,7 @@ const translations = {
     cont_email: "E-mail",
     cont_btn: "Zarezerwuj przez Booksy",
     map_title: "Jak dojechać",
-    foot_desc: "Salon fryzjerski dla kobiet w Szamotułach",
+    foot_desc: "Salon fryzjerski dla kobiet",
   },
   en: {
     nav_about: "About me",
@@ -219,9 +219,9 @@ const translations = {
     nav_gallery: "Gallery",
     nav_contact: "Contact",
     nav_map: "Map",
-    hero_h1: "Women's Hair Salon<br>Szamotuły",
+    hero_h1: "Women's Hair Salon",
     hero_sub:
-      "Atelier Julia — Your place for professional hair coloring and women's haircuts. Discover the highest quality services in the center of Szamotuły.",
+      "Atelier Julia — Your place for professional hair coloring and women's haircuts. Discover the highest quality services in the city center.",
     hero_btn1: "Book an appointment",
     hero_btn2: "Contact",
     hours_title: "Opening hours",
@@ -263,7 +263,7 @@ const translations = {
     cont_email: "E-mail",
     cont_btn: "Book via Booksy",
     map_title: "How to get there",
-    foot_desc: "Women's hair salon in Szamotuły",
+    foot_desc: "Women's hair salon",
   },
   ua: {
     nav_about: "Про мене",
@@ -271,9 +271,9 @@ const translations = {
     nav_gallery: "Галерея",
     nav_contact: "Контакти",
     nav_map: "Карта",
-    hero_h1: "Жіноча Перукарня<br>Шамотули",
+    hero_h1: "Жіноча Перукарня",
     hero_sub:
-      "Atelier Julia — Ваше місце для професійного фарбування та жіночих стрижок. Відкрийте для себе найвищу якість послуг у центрі Шамотул.",
+      "Atelier Julia — Ваше місце для професійного фарбування та жіночих стрижок. Відкрийте для себе найвищу якість послуг у центрі міста.",
     hero_btn1: "Забронювати термін",
     hero_btn2: "Контакти",
     hours_title: "Години роботи",
@@ -316,7 +316,7 @@ const translations = {
     cont_email: "Електронна пошта",
     cont_btn: "Забронювати через Booksy",
     map_title: "Як доїхати",
-    foot_desc: "Жіноча перукарня в Шамотулах",
+    foot_desc: "Жіноча перукарня",
   },
 };
 
